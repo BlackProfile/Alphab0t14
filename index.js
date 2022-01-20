@@ -168,7 +168,7 @@ fthumb = setting.fakethumb
 hit_today = []
 blocked = []
 ban = []
-limitawal = "50"
+limitawal = "15"
 gcounttprem = "50" 
 gcounttuser = "25" 
 
@@ -193,9 +193,9 @@ autoketik = false
 autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
-baper = 'SUB YT ZEEONE OFC'
-apiku = 'https://zeeoneofc.github.io/'
-gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
+baper = 'by Owner'
+apiku = 'https://wa.me/6281261470107'
+gc_wa_lu = 'https://chat.whatsapp.com/CwdROIZStE8BVeporcHtIX' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
 fake = setting.fake
@@ -1403,7 +1403,7 @@ const bugtrol = {
 						"sellerJid": "62887435047326@s.whatsapp.net",
 						"token": "AR5b5YFz2g4W5fYrjbeakPiI3/XxarATSeP+KLh+0FGwkw=="
 					}}}
-       const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/${thumbnail}`), surface: 200, message: `Whatsapp Bot 〽️\nBy ${ownername}`, orderTitle: 'zeeoneofc', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+       const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/${thumbnail}`), surface: 200, message: `Whatsapp Bot 〽️\nBy ${ownername}`, orderTitle: 'AlphaBot', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
         const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${creator}`,jpegThumbnail: fs.readFileSync(`image/${thumbnail}`)}}}
         const fvn = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":99999,"ptt": "true"}} } 
         const fgif = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${creator}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `Whatsapp Bot 〽️\nBy ${ownername}`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}
@@ -2403,31 +2403,31 @@ listMsg = {
                       "title": `SET MENU`,
  rows: [
                           {
-                              "title": "document",
+                              "title": "Document",
                               "rowId": "setmenu document"
                            },
                            {
-                              "title": "troli",
+                              "title": "Troli",
                               "rowId": "setmenu troli"
                            },
                            {
-                              "title": "troli2",
+                              "title": "Troli 2",
                               "rowId": "setmenu troli2"
                            },
                            {
-                              "title": "katalog",
+                              "title": "Katalog",
                               "rowId": "setmenu katalog"
                            },
                            {
-                              "title": "katalog2",
+                              "title": "Katalog 2",
                               "rowId": "setmenu katalog2"
                            },
                            {
-                              "title": "list",
+                              "title": "List",
                               "rowId": "setmenu list"
                            },
                            {
-                              "title": "location",
+                              "title": "Location",
                               "rowId": "setmenu location"
                            }
                         ]
@@ -2599,7 +2599,7 @@ alpha.sendMessage(from,  buttonMessagee, MessageType.buttonsMessage,{
 break
 case 'getbio':
 				if (!isGroup) return reply(lang.onlygc())
-				if (args.length < 1) return reply('```TAG ORANGNYA```')
+				if (args.length < 1) return reply('```TAG ORANGNYA KAK```')
                 mentionedd = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
                 const p = await alpha.getStatus(`${mentionedd}`, MessageType.text)
                 reply(p.status)
@@ -2611,7 +2611,7 @@ case 'getbio':
 /*case 'creategroup':
 case 'creategrup':
 			    if (!isGroup) return reply(lang.onlygc())
-				if (args.length < 1) return reply(`Penggunaan ${prefix}creategrup nama grup|@tag member`)
+				if (args.length < 1) return reply(`Penggunaan ${prefix}creategrup nama grup|@tag member\nNOTE : JANGAN ASAL-ASALAN MAKE MENU INI, KARNA DAPAT MENYEBABKAN NOMOR BOT KEBAN.`)
 				argza = arg.split('|')
 				if (mek.message.extendedTextMessage != undefined){
                     mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -2724,7 +2724,7 @@ case 'bcstik':
 						for (let _ of anu) {
 							alpha.sendMessage(_.jid, bc, sticker, {quoted:ftroli})
 						}
-						fakestatus('Suksess broadcast')
+						fakestatus('Suksess broadcast stiker!')
 					}
 					break
 case 'bcvideo':
@@ -2771,7 +2771,7 @@ case 'bcgif':
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
 					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: Owner AlphaBot;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
